@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#358739"
+    tools:context=".FavoritesActivity">
+
+    <TextView
+        android:id="@+id/regis"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="78dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:text="FAVORITES"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Favorite Artists Title -->
+    <TextView
+        android:id="@+id/favoriteArtistsTitleTextView"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorite Artists"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/regis"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Artist 1 -->
+    <ImageView
+        android:id="@+id/artist1ImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toBottomOf="@id/favoriteArtistsTitleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/artist1NameTextView"
+        app:layout_constraintEnd_toStartOf="@+id/artist2ImageView"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <TextView
+        android:id="@+id/artist1NameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Artist 1 Name"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/artist1ImageView"
+        app:layout_constraintStart_toStartOf="@id/artist1ImageView"
+        app:layout_constraintEnd_toEndOf="@id/artist1ImageView" />
+
+    <!-- Artist 2 -->
+    <ImageView
+        android:id="@+id/artist2ImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="@id/artist1ImageView"
+        app:layout_constraintStart_toEndOf="@+id/artist1ImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/artist2NameTextView" />
+
+    <TextView
+        android:id="@+id/artist2NameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Artist 2 Name"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/artist2ImageView"
+        app:layout_constraintStart_toStartOf="@id/artist2ImageView"
+        app:layout_constraintEnd_toEndOf="@id/artist2ImageView" />
+
+    <!-- Favorite Food Title -->
+    <TextView
+        android:id="@+id/favoriteFoodTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Favorite Food"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/artist2NameTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Food 1 -->
+    <ImageView
+        android:id="@+id/food1ImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toBottomOf="@id/favoriteFoodTitleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/food1NameTextView"
+        app:layout_constraintEnd_toStartOf="@+id/food2ImageView"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <TextView
+        android:id="@+id/food1NameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Food 1 Name"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/food1ImageView"
+        app:layout_constraintStart_toStartOf="@id/food1ImageView"
+        app:layout_constraintEnd_toEndOf="@id/food1ImageView" />
+
+    <!-- Food 2 -->
+    <ImageView
+        android:id="@+id/food2ImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="@id/food1ImageView"
+        app:layout_constraintStart_toEndOf="@+id/food1ImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/food2NameTextView" />
+
+    <TextView
+        android:id="@+id/food2NameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Food 2 Name"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/food2ImageView"
+        app:layout_constraintStart_toStartOf="@id/food2ImageView"
+        app:layout_constraintEnd_toEndOf="@id/food2ImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

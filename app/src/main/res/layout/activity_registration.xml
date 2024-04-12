@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#358739"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/regis"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="78dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:text="REGISTRATION"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <EditText
+        android:id="@+id/editTextFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/regis"
+        app:layout_constraintStart_toStartOf="@+id/regis"
+        app:layout_constraintTop_toBottomOf="@+id/regis"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="@color/material_dynamic_neutral90"
+        android:hint="First Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="@color/material_dynamic_neutral90"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextFirstName"
+        app:layout_constraintStart_toStartOf="@+id/editTextFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFirstName" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="@color/material_dynamic_neutral90"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextLastName"
+        app:layout_constraintStart_toStartOf="@+id/editTextLastName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLastName">
+
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonDateOfBirth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="@color/material_dynamic_neutral90"
+        android:paddingTop="10dp"
+        android:text="Select Date of Birth"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroupGender"
+        app:layout_constraintStart_toStartOf="@+id/radioGroupGender"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupGender" />
+
+    <EditText
+        android:id="@+id/School"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="@color/material_dynamic_neutral90"
+        android:hint="School"
+        android:inputType="text"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonDateOfBirth"
+        app:layout_constraintStart_toStartOf="@+id/buttonDateOfBirth"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDateOfBirth" />
+
+    <EditText
+        android:id="@+id/CourseAndYear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="@color/material_dynamic_neutral90"
+        android:hint="Course and Year"
+        android:inputType="text"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/School"
+        app:layout_constraintStart_toStartOf="@+id/School"
+        app:layout_constraintTop_toBottomOf="@+id/School" />
+
+    <EditText
+        android:id="@+id/contactNo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="@color/material_dynamic_neutral90"
+        android:hint="Contact No."
+        android:inputType="text"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/CourseAndYear"
+        app:layout_constraintStart_toStartOf="@+id/CourseAndYear"
+        app:layout_constraintTop_toBottomOf="@+id/CourseAndYear" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="@color/material_dynamic_neutral90"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/contactNo"
+        app:layout_constraintStart_toStartOf="@+id/contactNo"
+        app:layout_constraintTop_toBottomOf="@+id/contactNo" />
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEmail"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/editTextEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
